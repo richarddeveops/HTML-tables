@@ -1,0 +1,7 @@
+HTML TABLES
+
+Use a table for information that has a meaningful row-and-column relationship, not for general page layout. <table> contains rows (<tr>); header cells use <th>, and data cells use <td>. Group headings in <thead> and data rows in <tbody> when it makes the structure clearer.
+
+Use scope="col" or scope="row" on header cells to associate headings with data. A <caption> can describe the table. The colspan and rowspan attributes let a cell cover multiple columns or rows; use them carefully so each row still forms a consistent grid.
+
+I practised data tables, a meal timetable, and a complete 8-by-8 board. CSS can improve borders, spacing, and small-screen readability while the table markup retains its meaning.

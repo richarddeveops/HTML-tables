@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lesson.css">
     <title>Table</title>
+    <style>
+        body {
+            background-color: bisque;
+            color: rgba(0, 0, 0, 0.616);
+            text-align: center;
+            padding: 5px;
+            margin-top: 50px;
+
+        }
+        table {
+            border: 2px solid antiquewhite;
+            border-collapse: collapse;
+        }
+        a{
+            text-decoration: underline wavy;
+        }
+    </style>
 </head>
 <body>
-    <table border="2">
+    <p><a href="../index.html">All lessons</a></p>
+        <table class="lesson-table">
         <tr>
-            <td>S/N</td>
-            <td>Name</td>
-            <td>Account</td>
+            <th scope="col">S/N</th>
+            <th scope="col">Name</th>
+            <th scope="col">Account</th>
         </tr>
         <tr>
             <td>1</td>
@@ -34,12 +53,14 @@
     </center>
 
     <center>
-        <table border="2">
+        <table class="lesson-table">
             <thead>
-                <th>Day</th>
-                <th>Breakfast</th>
-                <th>Lunch</th>
-                <th>Dinner</th>
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Breakfast</th>
+                    <th scope="col">Lunch</th>
+                    <th scope="col">Dinner</th>
+                </tr>
             </thead>
 
             <tr>
@@ -91,56 +112,18 @@
         <h1>Chess Board</h1>
     </center>
     <center>
-        <table border="2">
-            <tr>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-            </tr>
-            <tr>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-                <td style="background-color: black; width: 50px; height: 50px;"></td>
-                <td style="background-color: white; width: 50px; height: 50px;"></td>
-            </tr>
+        <table class="chessboard" aria-label="Eight by eight chessboard example">
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
         </table>
     </center>
-     <p><a href="">What I learned</a></p>
+     <p><a href="lesson-summary.txt">What I learned</a></p>
     <p> <a href="classwork_1.html">Our class work</a></p>
     <p><a href="Assignment_Draft board.html">This is the assignment we were given</a></p>
     <p><a href="Self practice_scramble.html">Decided to try one for myself</a></p>
